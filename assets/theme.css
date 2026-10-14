@@ -1,0 +1,68 @@
+/* Тема магазина свечей: тёплый кремовый фон, корица и мёд, изящные заголовки с засечками. */
+@font-face {
+  font-family: 'Manrope'; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url(../fonts/manrope-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Manrope'; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url(../fonts/manrope-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 500 700; font-display: swap;
+  src: url(../fonts/cormorant-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 500 700; font-display: swap;
+  src: url(../fonts/cormorant-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --bg: #f7f1e8;
+  --surface: #fffbf5;
+  --ink: #2b211b;
+  --muted: #7b6b5e;
+  --line: #eadfce;
+  --primary: #8b4a2b;
+  --primary-d: #6f3920;
+  --primary-soft: #f4e5d7;
+  --primary-soft-2: #eed8c4;
+  --on-primary: #ffffff;
+  --accent: #e7b56a;
+  --on-accent: #2b211b;
+  --dark: #2b211b;
+  --header-bg: rgba(247, 241, 232, .92);
+  --ribbon-link: #e7b56a;
+  --sale: #8b4a2b;
+  --on-sale: #ffffff;
+  --danger: #b4432c;
+  --danger-soft: #f8e3dc;
+  --warn-soft: #fbf0d9;
+  --warn-ink: #6b4a00;
+  --neutral-soft: #efe6d9;
+  --img-bg: #efe5d8;
+  --ring: rgba(139, 74, 43, .3);
+
+  --radius: 20px;
+  --radius-sm: 14px;
+  --radius-lg: 28px;
+  --shadow: 0 1px 2px rgba(43, 33, 27, .05), 0 10px 28px rgba(43, 33, 27, .07);
+
+  --font-body: 'Manrope', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  --font-head: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --h1-size: clamp(40px, 6vw, 68px);
+  --h1-weight: 600;
+  --h1-spacing: -.01em;
+  --h2-size: 36px;
+  --h2-weight: 600;
+  --logo-size: 27px;
+  --card-title-size: 21px;
+  --card-title-weight: 600;
+}
+
+@media (max-width: 480px) {
+  :root { --card-title-size: 19px; --h2-size: 32px; }
+}
